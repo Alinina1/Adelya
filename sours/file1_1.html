@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>luv</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body margin-top 0px;>
+    
+    <div id='Cover'>
+        
+            <p class="variant-one"><input name="dzen" type="radio" value="beliy"> Белый. Проклятая мелодия</p>
+            <p class="variant-two"><input name="dzen" type="radio" value="bogi"> Страшная воля богов</p>
+            <p class="variant-two"><input name="dzen" type="radio" value="cot" checked> Кот. Глаза которые видят смерть</p>
+            <button onclick="proverit();" id="show">Выбрать</button>
+            <dialog>
+                <p>Поздравляю!<br>Ты выбрала правильный ответ.</br>
+                <br>Готова перейти к следующему заданию?</br></p>
+                <p class="button-test"><a class="sled-test" href="file2.html" >Дальше</a></p>
+            </dialog>
+        
+    </div>  
+
+<script> 
+    var dialog = document.querySelector('dialog');
+    //Здесь идет проверка правильности выбора ответа
+    function proverit(){
+        pr_ot="bogi"
+        otv_uch_1 =document.querySelector('input[name="dzen"]:checked').value;
+        ball = 0;
+        if(otv_uch_1 == pr_ot){ ball =1; }
+
+        if(ball==1){
+            document.querySelector('#show').onclick = function() {
+            dialog.showModal();
+            };
+            document.querySelector('#close').onclick = function() {
+            dialog.close();
+            };
+        }
+        else{
+            alert("Попробуй еще раз");
+        }
+    }
+</script>
+
+
+    <div class="fullscreen-bg">
+        <div class="overlay">
+        
+            <div id="message-box">  
+                <p class="message">
+                    Приветствую тебя на уровне 1.
+                </p>
+                <p class="message-test">
+                    Начнем с простого задания.
+                    <br> Летом 2015 года мы смотрели какое-то количество азиатских ужастиков. 
+                    Помнишь ли ты в каком из ужастиков было упоминание России?</br>
+                </p>
+            </div>
+            <img src="img/girl1.png" >
+
+        </div>
+
+        <video loop="" muted="" autoplay="" class="fullscreen-bg__video">
+            <source src="vid/back.mp4" type="video/mp4">
+            <source src="vid/back.webm" type="video/webm">
+        </video>
+    </div>
+
+</body>
+</html>

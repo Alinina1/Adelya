@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>luv</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+
+</head>
+
+<body margin-top 0px;>
+    
+    <div id='Cover'>
+            <button onclick="proverit();" id="variant">человек все время куда-то опаздывает</button>
+            <button onclick="alert('Упс! Ошибочка. Попробуй еще раз');" id="variant-two">человеку везде мерещется белый кролик</button>
+            <button onclick="alert('Упс! Ошибочка. Попробуй еще раз');" class="variant-two">мужчина во время полового акта быстро приходит к завершению</button>
+            
+            <dialog>
+                <p>У тебя точно синдром белого кролика &#128569; Не помню, чтобы ты не опаздывала
+                </p>
+                <p class="button-test"><a class="sled-test" href="file3.html" >Дальше</a></p>
+            </dialog>
+        
+    </div>  
+
+<script> 
+    //если правильный ответ
+    var dialog = document.querySelector('dialog');
+    function proverit(){
+        document.querySelector('#variant').onclick = function() {
+            dialog.showModal();
+        };  
+    }
+</script>
+
+
+    <div class="fullscreen-bg">
+        <div class="overlay">
+        
+            <div id="message-box">  
+                <p class="message">
+                    Уровень 2
+                </p>
+                <p class="message-test">
+                    Как хорошо ты знаешь свои сохраненные каринки?
+                    Это определение оттуда. Продолжи его.
+                <br> Синдром белого кролика - это болезнь, при которой...</br>
+                </p>
+            </div>
+            <img src="img/rabb.png" width="424" height="424" >
+
+        </div>
+
+        <video loop="" muted="" autoplay="" class="fullscreen-bg__video">
+            <source src="vid/back.mp4" type="video/mp4">
+            <source src="vid/back.webm" type="video/webm">
+        </video>
+    </div>
+
+</body>
+</html>

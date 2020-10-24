@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>luv</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+
+</head>
+
+<body margin-top 0px;>
+    
+    <div id='Cover'>
+            <button onclick="alert('Упс! Ошибочка. Попробуй еще раз');" id="variant">это было одно из планов на лето и мы просто собрались и пошли</button>
+            <button onclick="proverit();" id="variant-two">мы катались на велосипедах и внезапно решили поплавать</button>
+            <button onclick="alert('Упс! Ошибочка. Попробуй еще раз');" class="variant-two">была жаркая погода, пришли к речке, когда было еще светло и задержались</button>
+            
+            <dialog>
+                <p>Ды-ааа! Это был мой последний раз, когда я плавала ночью. И самое запоминающееся купание с тобой
+                </p>
+                <p class="button-test"><a class="sled-test" href="file4.html" >Дальше</a></p>
+            </dialog>
+        
+    </div>  
+
+<script> 
+    //если правильный ответ
+    var dialog = document.querySelector('dialog');
+    function proverit(){
+        document.querySelector('#variant-two').onclick = function() {
+            dialog.showModal();
+        };  
+    }
+</script>
+
+
+    <div class="fullscreen-bg">
+        <div class="overlay">
+        
+            <div id="message-box">  
+                <p class="message">
+                    Уровень 3
+                </p>
+                <p class="message-test">
+                    Лето 2017 года. Помнишь, ка мы купались голыми ночью? &#128584; А помнишь ли ты, что было перед этим?
+                </p>
+            </div>
+            <img src="img/girl3.png" >
+
+        </div>
+
+        <video loop="" muted="" autoplay="" class="fullscreen-bg__video">
+            <source src="vid/back.mp4" type="video/mp4">
+            <source src="vid/back.webm" type="video/webm">
+        </video>
+    </div>
+
+</body>
+</html>
