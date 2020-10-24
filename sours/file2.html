@@ -27,9 +27,7 @@
     //если правильный ответ
     var dialog = document.querySelector('dialog');
     function proverit(){
-        document.querySelector('#variant').onclick = function() {
-            dialog.showModal();
-        };  
+        document.querySelector('#variant').onclick = dialog.showModal(); 
     }
 </script>
 
@@ -39,7 +37,7 @@
         
             <div id="message-box">  
                 <p class="message">
-                    Уровень 2
+                    Уровень 7
                 </p>
                 <p class="message-test">
                     Как хорошо ты знаешь свои сохраненные каринки?

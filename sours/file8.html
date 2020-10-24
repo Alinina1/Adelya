@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>luv</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+
+</head>
+
+<body margin-top 0px;>
+    
+    <div id='Cover'>
+            
+            <button onclick="alert('Упс! Ошибочка. Попробуй еще раз');" id="variant">Улитки - угарные, липкие, вялые и тупые</button>
+            <button onclick="alert('Упс! Ошибочка. Попробуй еще раз');" class="variant-two">Улитки - пиздатые, скользкие, прожорливые и медленные</button>
+            <button onclick="alert('Упс! Ошибочка. Попробуй еще раз');" class="variant-two">Улитки - заебатые, травоядные, ползучие и вкусные.</button>
+            <button onclick="proverit();" id="variant-two">Улитки - ахуенные, умные, быстрые и реагируют на голос.</button>
+
+            <dialog id="dialog8">
+                <p>Надеюсь ты угадала с первого раза. Вот часть этой голосовухи:</p>
+                <audio controls margin-top="10">
+                    <source src="sound/ulitki.mp3" type="audio/mpeg">                
+                </audio>
+                <p class="button-test"><a class="sled-test" href="file9.html" >Дальше</a></p>
+            </dialog>
+        
+    </div>  
+
+<script> 
+    //если правильный ответ
+    var dialog = document.querySelector('dialog');
+    function proverit(){
+        document.querySelector('#variant-two').onclick = dialog.showModal(); 
+    }
+</script>
+
+
+    <div class="fullscreen-bg">
+        <div class="overlay">
+        
+            <div id="message-box">  
+                <p class="message">
+                    Уровень 13
+                </p>
+                <p class="message-test">
+                    А теперь такое задание: попробуй угадать, что ты говрила про улиток. Если тебе это поможет, то ты говорила это в большом аудиосообщении Ринату.
+                </p>
+            </div>
+            <img src="img/ulitka.png" >
+            
+
+        </div>
+
+        <video loop="" muted="" autoplay="" class="fullscreen-bg__video">
+            <source src="vid/back.mp4" type="video/mp4">
+            <source src="vid/back.webm" type="video/webm">
+        </video>
+    </div>
+
+</body>
+</html>

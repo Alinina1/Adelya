@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>luv</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+
+</head>
+
+<body margin-top 0px;>
+    
+    <div id='Cover'>
+            
+            <button onclick="proverit();" id="variant">Выбрать</button>         
+            <audio controls>
+                <source src="sound/1v.mp3" type="audio/mpeg">                
+            </audio>
+
+            <button onclick="proverit();" id="variant-two">Выбрать</button>         
+            <audio controls>
+                <source src="sound/2v.mp3" type="audio/mpeg">                
+            </audio>
+
+            <button onclick="proverit();" id="variant-two">Выбрать</button>         
+            <audio controls>
+                <source src="sound/3v.mp3" type="audio/mpeg">                
+            </audio>
+
+
+            <dialog>
+                <p>Эти все голосовые сообщения были твои &#128514; &#128514; Обожаю
+                </p>
+                <p class="button-test"><a class="sled-test" href="file8.html" >Дальше</a></p>
+            </dialog>
+        
+    </div>  
+
+<script> 
+    //если правильный ответ
+    var dialog = document.querySelector('dialog');
+    function proverit(){
+        document.querySelector('#variant-two').onclick = dialog.showModal(); 
+    }
+</script>
+
+
+    <div class="fullscreen-bg">
+        <div class="overlay">
+        
+            <div id="message-box">  
+                <p class="message">
+                    Уровень 12
+                </p>
+                <p class="message-test">
+                    Теперь сложное задание. Сможешь угадать, какое из голосовых сообщений твоё?
+                </p>
+            </div>
+            
+        </div>
+
+        <video loop="" muted="" autoplay="" class="fullscreen-bg__video">
+            <source src="vid/back.mp4" type="video/mp4">
+            <source src="vid/back.webm" type="video/webm">
+        </video>
+    </div>
+
+</body>
+</html>
